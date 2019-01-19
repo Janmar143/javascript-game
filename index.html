@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+     <link rel="stylesheet" href="assets/css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+ 
+</head>
+<body style="background-color: #616161;">
+	<br><br>
+<center>
+
+<table border="5" style=" border-color: black;">
+
+<tr style="border-style: solid; border-width: 5px border-color: black;">
+	<th colspan=4 class="cal" ;"><center>Calculator </center></th>
+	
+</tr>
+<tr style="text-align:right; border-style: solid; border-width: 5px; border-color: black;">
+	<td colspan=4><input class="cal" id="text1" placeholder="0" style="text-align:right;" /></td>
+	
+</tr>
+<tr style="text-align:right; border-style: solid; border-width: 5px; border-color: black;">
+	<td style="border-width:3px;"><button class="button" type="button" value="clear" onClick="clear1()" style="border-width:3px; border-color: black;">del</td>
+	<td style="border-width:3px;"><button class="button" type="button" value="0" onClick="event1(this.value)" style="border-width:3px; border-color: black;">0</button></td>
+	<td style="border-width:3px;"><button class="button" type="button" value="*"  onClick="event1(this.value)" style="border-width:3px; border-color: black;">*</button></td>
+	<td style="border-width:3px;"><button class="button"" type="button" value="-"  onClick="event1(this.value)" style="border-width:3px; border-color: black;">-</button></td>
+</tr>
+<tr style="text-align:right; border-style: solid; border-width: 5px; border-color: black;">
+	<td style="border-width:3px;"><button class="button" type="button" value="7" onClick="event1(this.value)" style="border-width:3px; border-color: black;">7</button></td>
+	<td style="border-width:3px;"><button class="button" type="button" value="8" onClick="event1(this.value)"style="border-width:3px; border-color: black;">8</button></td>
+	<td style="border-width:3px;"><button class="button" type="button" value="9" onClick="event1(this.value)" style="border-width:3px; border-color: black;">9</button></td>
+	<td style="border-width:3px;"><button class="button" type="button" value="+" onClick="event1(this.value)" style="border-width:3px; border-color: black;">+</td>
+</tr>
+<tr style="text-align:right; border-style: solid; border-width: 5px; border-color: black;">
+	<td style="border-width:3px;"><button class="button" type="button" value="4" onClick="event1(this.value)" style="border-width:3px; border-color: black;">4</button></td>
+	<td style="border-width:3px;"><button class="button" type="button" value="5" onClick="event1(this.value)"style="border-width:3px; border-color: black;">5</button></td>
+	<td style="border-width:3px;"><button class="button" type="button" value="6" onClick="event1(this.value)" style="border-width:3px; border-color: black;">6</button></td>
+	<td style="border-width:3px;"><button class="button" type="button" value="/" onClick="event1(this.value)" style="border-width:3px; border-color: black;">/</button></td>
+
+</tr>
+<tr style="text-align:right; border-style: solid; border-width: 5px; border-color: black;">
+	<td style="border-width:3px;"><button class="button" type="button" value="1" onClick="event1(this.value)" style="border-width:3px; border-color: black;">1</button></td>
+	<td style="border-width:3px;"><button class="button" type="button" value="2" onClick="event1(this.value)" style="border-width:3px; border-color: black;">2</button></td>
+	<td style="border-width:3px;"><button class="button" type="button" value="3" onClick="event1(this.value)" style="border-width:3px;border-color: black;">3</button></td>
+	<td style="border-width:3px;"><button class="button" type="button" value="." onClick="event1(this.value)" style="border-width:3px; border-color: black;" >.</button></td>
+</tr>
+<tr>
+	<td colspan="4"  ><button class="button" type="button" onClick="event2()" style="border-width:3px; border-color: black; width: 240px" >=</button></td>
+</tr>
+
+</table>
+
+
+</center>
+</body>
+<script>
+function event1(x){
+		document.getElementById("text1").value+=x;
+}
+function event2(){
+		var x = document.getElementById("text1").value;
+		document.getElementById("text1").value = eval(x);
+		$(document.body).addClass('background-666');
+}
+function clear1(){
+		document.getElementById("text1").value = "";
+}
+</script>
+	
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+</html>

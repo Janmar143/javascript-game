@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Speedtype</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
+
+
+</head>
+
+<body id="gg" style="background-color: black;">
+   <div class="container text-center">
+
+    <!-- Word & Input -->
+    <br><br>
+<!-- Instructions -->
+        <div class="row mt-4 mb-4">
+          <div class="col-md-12">
+            <div class="card card-body pt-2 pb-2">
+              <h5 class="tx">Instructions</h5>
+              <p class="tx1"><b>Type each word in the given amount of seconds to score. To play again, just type the current word. Your score
+                will reset</b></p>
+            </div>
+           <!--  <br>
+            <button type="button" id="diff1" onclick="msg()">Easy</button>
+            <button type="button" id="diff2" value="Medium" >Medium</button>
+            <button type="button" id="diff3" value="hard" >Hard</button> -->
+          </div>
+        </div>
+
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <p class="lead tx2">Type The Given Word Within
+          <span class="text-success tx1" id="seconds"></span> Seconds:</p>
+        <h2 class="display-5 mb-5 tx3" id="current-word"></h2>
+        <input type="text" class="form-control form-control-lg tx" placeholder="Start typing..." id="word-input" autofocus>
+        <h4 class="mt-3 " id="message" style="color: white; font-family: horror;"></h4>
+
+        <!-- Time & Score Columns -->
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <h3 class="tx2">Time Left:
+              <span id="time">0</span>
+            </h3>
+          </div>
+          <div class="col-md-6">
+            <h3 class="tx2">Score:
+              <span id="score">0</span>
+            </h3>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
